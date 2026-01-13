@@ -1,18 +1,24 @@
 package week10;
-
-public class OnlineCourse
+public class OnlineCourse extends Course
 {
     private double platformFee;
     
-    public onlineCourse(int CourseId, string Coursename, double baseFee, double platformFee)
+    public OnlineCourse(int courseId, String courseName, double baseFee, double platformFee)
     {
-        super(CourseId, CourseName, baseFee);
+        super(courseId, courseName, baseFee);
         this.platformFee= platformFee;
     }
     
     @Override
-    protected double calculate()
+    protected double calculateFee()
     {
-        return super.getbase()
+        return super.getBaseFee() + this.platformFee;
+    }
+    
+    public void displayOnlineCourseDetails()
+    {
+        super.displayCourseDetails(); 
+        System.out.println("Total fee for this online course: "+ this.calculateFee());
+        
     }
 }
