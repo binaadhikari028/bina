@@ -1,5 +1,5 @@
 
-package week8;
+package Week8;
 public class ShoppingCart
 {
     private String itemName;

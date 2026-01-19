@@ -1,5 +1,5 @@
 
-package week8;
+package Week8;
 public class ElectricityBill
 {
     private String consumerName;

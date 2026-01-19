@@ -1,4 +1,4 @@
-package week8;
+package Week8;
 public class BankAccount
 {
     private int accountNumber;
